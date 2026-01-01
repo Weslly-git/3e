@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+}
+
+model-viewer {
+    width: 100vw;
+    height: 100vh;
+}
+
+#loveText {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  color: #ff8dfc;
+  font-size: 36px;
+  text-shadow:
+    0 0 10px #ff4dff,
+    0 0 25px #ff4dff,
+    0 0 50px #ff4dff;
+  z-index: 10;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at bottom, #020111, #000);
+  overflow: hidden;
+}
+
+/* Capa de estrellas */
+.stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(2px 2px at 20% 30%, white, transparent),
+    radial-gradient(1px 1px at 40% 70%, white, transparent),
+    radial-gradient(2px 2px at 60% 20%, white, transparent),
+    radial-gradient(1px 1px at 80% 50%, white, transparent),
+    radial-gradient(2px 2px at 30% 80%, white, transparent),
+    radial-gradient(1px 1px at 70% 40%, white, transparent);
+  background-size: 300px 300px;
+  animation: moveStars 40s linear infinite;
+  z-index: -2;
+}
+
+@keyframes moveStars {
+  from { background-position: 0 0; }
+  to { background-position: 1000px 1000px; }
+}
+
